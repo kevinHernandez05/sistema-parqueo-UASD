@@ -63,7 +63,16 @@
             <li>
               <a href="Registrar_nuevo_usuario.html">Registrar salida de automóvil</a>
             </li>
+            <li>
+              <a href="Registrar_nuevo_usuario.html">Ejemplo</a>
+            </li>
           </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Historial de parqueos</span>
+          </a>
         </li>
        </ul>
       <ul class="navbar-nav sidenav-toggler">
