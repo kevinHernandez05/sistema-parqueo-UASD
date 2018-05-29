@@ -63,6 +63,9 @@
             <li>
               <a href="Registrar_nuevo_usuario.html">Registrar salida de automóvil</a>
             </li>
+			<li>
+              <a href="CHECKBOX.php">registro de entrada de vehiculos</a>
+            </li>
           </ul>
         </li>
        </ul>
