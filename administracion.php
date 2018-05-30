@@ -1,8 +1,7 @@
 <?php 
     
     session_start();//inicia variables de sesion!
-    
-    
+        
     if(!$_SESSION['logged']){
         //Si no esta logeado...
         header("location:login.php");
@@ -46,9 +45,9 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Inicio</span>
+            <span class="nav-link-text"><strong>Inicio</strong></span>
           </a>
         </li>
          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
@@ -58,18 +57,15 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="navbar.html">Registrar entrada de automóvil</a>
+              <a href="registrar_automovil.html">Registrar entrada de automóvil</a>
             </li>
             <li>
               <a href="Registrar_nuevo_usuario.html">Registrar salida de automóvil</a>
             </li>
-            <li>
-              <a href="Registrar_nuevo_usuario.html">Ejemplo</a>
-            </li>
-          </ul>
+           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="historial_parqueos.php">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Historial de parqueos</span>
           </a>
@@ -86,18 +82,24 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-envelope"></i>
-            <span class="d-lg-none">Avisos
-              <span class="badge badge-pill badge-primary">Empty</span>
+            <span class="d-lg-none">Estudiantes
+              
             </span>
             <span class="indicator text-primary d-none d-lg-block">
               <i class="fa fa-fw fa-circle"></i>
             </span>
           </a>
           <div class="dropdown-menu" aria-labelledby="messagesDropdown">
-            <h6 class="dropdown-header">Mensajes:</h6>
+            <h6 class="dropdown-header">Particiantes:</h6>
             <div class="dropdown-divider"></div>
+            <a class="dropdown-item small">Kevin Hernandez - 100272754</a>
+            <a class="dropdown-item small">Marilenny Soriano - 100358990</a>
+            <a class="dropdown-item small">Daniel Arturo Paredes - 100101611</a>
+            <a class="dropdown-item small">Warlyn Estrella Polanco - FD6824</a>
+            <a class="dropdown-item small">Omar de Jesus Duran - 100004726</a>
+            <a class="dropdown-item small">Julio Cesar Geraldino Nuñez - NULL</a>
             
-            <a class="dropdown-item small">No hay mensajes para mostrar</a>
+
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -125,16 +127,7 @@
             </a>
             
         <li class="nav-item">
-          <form class="form-inline my-2 my-lg-0 mr-lg-2">
-            <div class="input-group">
-              <input class="form-control" type="text" placeholder="Buscar registro...">
-              <span class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-          </form>
+          
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
@@ -158,6 +151,11 @@
           <!--
           CONTENIDO DE LA PAGINA A PARTIR DE AQUI
           -->
+
+          <div align="center">
+            <h1>BIENVENIDO AL SISTEMA DE PARQUEO</h1>
+            <h3>Ulitice la barra de la izquierda para navegar por el sistema</h3>
+          </div>
 			
 
         </div>
@@ -202,7 +200,7 @@
                 $_SESSION['logged'] = false;
 
                 //te devolvemos a la pantalla de inicio de sesion
-                //header("location:login.php");
+                header("location:login.php");
               }
             
             ?>
