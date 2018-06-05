@@ -10,10 +10,10 @@
     function logging(){
 
         //credenciales de base de datos
-        $servidor = "localhost";
-        $usuarioDB = "root";
-        $passDB = "";
-        $NombreDB = "progiii";
+        $servidor = "mysql.webcindario.com";
+        $usuarioDB = "sistemaparqueo";
+        $passDB = "051095";
+        $NombreDB = "sistemaparqueo";
 
         //Iniciando la base de datos
         $conexion = @mysqli_connect($servidor, $usuarioDB, $passDB) 

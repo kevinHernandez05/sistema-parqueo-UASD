@@ -1,10 +1,10 @@
 <?php
 
     //conectarse a base de datos.	
-	$servidor = "localhost";
-	$usuarioDB = "workbefy";
-	$passDB = "pandaluis";
-	$NombreDB = "progiii";
+    $servidor = "mysql.webcindario.com";
+    $usuarioDB = "sistemaparqueo";
+    $passDB = "051095";
+    $NombreDB = "sistemaparqueo";
 
 	//iniciando la base de datos
 	$conexion = @mysqli_connect($servidor, $usuarioDB, $passDB) 
