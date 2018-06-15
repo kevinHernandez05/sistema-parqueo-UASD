@@ -60,7 +60,7 @@
               <a href="registrar_automovil.html">Registrar entrada de automóvil</a>
             </li>
             <li>
-              <a href="Registrar_nuevo_usuario.html">Registrar salida de automóvil</a>
+              <a href="registrar_salida_automovil.php">Registrar salida de automóvil</a>
             </li>
            </ul>
         </li>
