@@ -1,9 +1,9 @@
 
 <?php
 
-$mysql = mysqli_connect("Localhost","root","");       
+$mysql = mysqli_connect("mysql.webcindario.com","sistemaparqueo","051095");       
 
-mysqli_select_db( $mysql, "progiii") ;
+mysqli_select_db( $mysql, "sistemaparqueo") ;
 
 $test = mysqli_query($mysql,"select count(*) as res1 from registro where noPuertaEntrada = '1'");
 $test2 = mysqli_query($mysql,"select count(*) as res2 from registro where noPuertaEntrada = '2'");

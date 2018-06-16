@@ -12,7 +12,7 @@ require_once('../connect.php');
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Highcharts Example</title>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
 		<style type="text/css">
 ${demo.css}
 		</style>

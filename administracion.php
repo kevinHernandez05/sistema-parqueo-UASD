@@ -70,6 +70,12 @@
             <span class="nav-link-text">Historial de parqueos</span>
           </a>
         </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="acercaDe.php">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Acerca del sistema</span>
+          </a>
+        </li>
        </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -97,8 +103,6 @@
             <a class="dropdown-item small">Daniel Arturo Paredes - 100101611</a>
             <a class="dropdown-item small">Warlyn Estrella Polanco - FD6824</a>
             <a class="dropdown-item small">Omar de Jesus Duran - 100004726</a>
-            <a class="dropdown-item small">Julio Cesar Geraldino Nuñez - NULL</a>
-            
 
           </div>
         </li>
