@@ -165,10 +165,15 @@
 
           <?php
               //conectarse a base de datos.	
-              $servidor = "mysql.webcindario.com";
+              /*$servidor = "mysql.webcindario.com";
               $usuarioDB = "sistemaparqueo";
               $passDB = "051095";
-              $NombreDB = "sistemaparqueo";
+              $NombreDB = "sistemaparqueo";*/
+
+              $servidor = "localhost";
+              $usuarioDB = "root";
+              $passDB = "";
+              $NombreDB = "progiii";
 
               //iniciando la base de datos
               $conexion = @mysqli_connect($servidor, $usuarioDB, $passDB) 
@@ -197,7 +202,7 @@
               echo "<td>Confirmar salida</td>";
               while ($columna = mysqli_fetch_array($resultado)){
                 echo "<tr>";
-                echo "<td>" . $columna['cedula'] . "</td><td>" . $columna['nombre'] . "</td><td>" . $columna['apellido'] . "</td><td>" . $columna['marca'] . "</td><td>" . $columna['modelo'] . "</td><td>" . $columna['noPuertaEntrada'] . "</td><td> <a href="."?salir=1&id=".$columna['cedula'].">salir?</a></td>";
+                echo "<td>" . $columna['cedula'] . "</td><td>" . $columna['nombre'] . "</td><td>" . $columna['apellido'] . "</td><td>" . $columna['marca'] . "</td><td>" . $columna['modelo'] . "</td><td>" . $columna['noPuertaEntrada'] . "</td><td> <a href="."?salir=1&id=".$columna['cedula'].">1 </a><a href="."?salir=2&id=".$columna['cedula']."> 2 </a><a href="."?salir=3&id=".$columna['cedula']."> 3 </a><a href="."?salir=4&id=".$columna['cedula']."> 4 </a></td>";
                 echo "</tr>";
               }
               echo "</table>";  

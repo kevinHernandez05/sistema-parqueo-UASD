@@ -165,10 +165,15 @@
 
           <?php
               //conectarse a base de datos.	
-              $servidor = "mysql.webcindario.com";
+              /*$servidor = "mysql.webcindario.com";
               $usuarioDB = "sistemaparqueo";
               $passDB = "051095";
-              $NombreDB = "sistemaparqueo";
+              $NombreDB = "sistemaparqueo";*/
+
+              $servidor = "localhost";
+              $usuarioDB = "root";
+              $passDB = "";
+              $NombreDB = "progiii";
 
               //iniciando la base de datos
               $conexion = @mysqli_connect($servidor, $usuarioDB, $passDB) 
@@ -196,9 +201,14 @@
               echo "<th>Modelo</th>";
               echo "<th>Puerta Entrada</th>";  
               while ($columna = mysqli_fetch_array($resultado)){
+               if(empty($columna)){
+                 echo "<p>Actualmente no hay carros en el parqueo.</p>";
+               }
+               else{
                 echo "<tr>";
                 echo "<td>" . $columna['cedula'] . "</td><td>" . $columna['nombre'] . "</td><td>" . $columna['apellido'] . "</td><td>" . $columna['marca'] . "</td><td>" . $columna['modelo'] . "</td><td>" . $columna['noPuertaEntrada'] . "</td>";
                 echo "</tr>";
+               }
               }
               echo "</table><br/>";  
 
@@ -227,9 +237,10 @@
                 echo "</tr>";
               }
               echo "</table>";  
+         
+              ?>
 
-          ?>
-
+              <a href="Arturo/chart.php">Mostrar grafica con tablas dinamicas</a>
         </div>
       </div>
     </div>
